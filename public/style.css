@@ -1,0 +1,112 @@
+*{text-align: center;}
+
+body{background-color: #112539}
+
+.titulo{
+    color: white;
+}
+
+.subtitulo{
+    color: rgb(184, 184, 184);
+}
+
+main{
+    display: grid;
+    grid-template-areas:"form form chat"
+    "contenedor contenedor chat"
+    "contenedor contenedor chat";
+    grid-template-columns: 1fr 1fr 400px;
+    gap: .5rem;
+}
+
+.lineasForm{
+    margin: 3vh auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.historial{
+    display: block;
+}
+
+.contenedor{
+    grid-area: contenedor;
+    background-color:#03d2fe;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#tabla{
+    margin: 0 auto;
+    color: black;
+    border: 1px solid;
+    border-spacing: 15px 10px;
+    background-color: #fff;
+}
+
+.form{
+    grid-area: form;
+    background-color:#0d4f71;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+.chatContenedor{
+    grid-area: chat;
+    background-color: #098ab3;
+}
+
+.lineasForm input{
+    background-color: #0d4f71;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.lineasForm button{
+    background-color: #03d2fe;
+    border: 1px solid black;
+    border-radius: 15%;
+    box-shadow: 1px 1px rgb(129, 129, 129);
+}
+
+#formChat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#registroMensajes{
+    background-color: #a3cedb;
+    border: #fff 1px solid;
+    border-radius: 4%;
+    overflow: auto;
+    margin: auto;
+    width: 90%;
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+.correo{
+    font-weight: bold;
+    color: #53045a;
+    display: inline;
+}
+
+.fecha{
+    font-weight: bold;
+    color: rgb(119, 12, 33);
+    display: inline;
+}
+
+.mensaje{
+    display: block;
+    color: #112539;
+    max-width: 100%;
+    display: inline;
+}

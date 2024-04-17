@@ -1,0 +1,1 @@
+[{"email":"esteban2santos@gmail.com","contenido":"asdasd","fecha":"[18/4/2022 - 18:49]"},{"email":"esteban2santos@gmail.com","contenido":"Este mensaje es de prueba usando forms en django","fecha":"[18/4/2022 - 18:49]"},{"email":"esstebann@hotmail.es","contenido":"hola cachito","fecha":"[18/4/2022 - 18:54]"}]

@@ -1,0 +1,19 @@
+html
+    head 
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta( name="viewport" content="width=device-width, initial-scale=1.0")
+        title Motores de plantillas 
+        link(rel="stylesheet", href="style.css")
+    body 
+        h1.titulo Sexto desafío entregable 
+        h2.subtitulo Curso Backend - CoderHouse
+        main 
+            div.form
+                include components/form
+            div.contenedor
+                include components/contenedor
+            div.chatContenedor
+                include components/chat
+        script(src="/socket.io/socket.io.js") 
+        script(src="/client.js") 

@@ -1,0 +1,11 @@
+h2 Centro de Mensajes
+form#formChat
+    input(type="email" placeholder="Ingresa tu email" required id="email")
+    input(type ="text" placeholder="Ingresa el mensaje" required id="mensaje")
+    input(type="submit", value="Enviar")
+div#registroMensajes
+    each msj in contenido.registroChat  
+        div 
+            p(class="correo")=msj.email
+            p(class="fecha")=msj.fecha
+            p(class="mensaje")=msj.contenido

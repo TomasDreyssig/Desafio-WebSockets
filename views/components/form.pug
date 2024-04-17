@@ -1,0 +1,12 @@
+form(method="POST" action="api/productos/")
+    div.lineasForm
+        label(for="producoNombre") Nombre del producto:
+        input(type="text" id="productoNombre" name="nombre")
+    div.lineasForm
+        label(for="productoPrecio") Precio:
+        input(type="number" id="productoPrecio" name="precio")
+    div.lineasForm
+        label(for="producoThumbnail") Thumbnail:
+        input(type="text" id="producThumbnail" name="thumbnail")
+    div.lineasForm
+        button(type="submit") Enviar

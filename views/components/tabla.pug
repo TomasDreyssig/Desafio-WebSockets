@@ -1,0 +1,14 @@
+table#tabla
+    tr
+        th(id="id") ID
+        th(id="nombreTabla") Nombre 
+        th(id="precioTabla") Precio
+        th(id="thumbnailTabla") Thumbnail 
+    each producto in contenido.productos
+        tr
+            td=producto.ID 
+            td=producto.nombre 
+            td=producto.precio 
+            td
+                img(src=producto.thumbnail width="40px" alt=producto.thumbnail) 
+            
